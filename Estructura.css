@@ -1,0 +1,50 @@
+body { 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  background: #f5f5f5; 
+} 
+
+/* GRID: dos columnas */ 
+.cv { 
+  display: grid; 
+  grid-template-columns: 1fr 2fr; 
+  grid-template-rows: auto, 80px, auto; 
+  max-width: 800px; 
+  margin: 30px auto; 
+  background: white; 
+  grid-gap: 5px; 
+} 
+
+/* Lado izquierdo */ 
+.lado { 
+  background: #2e3b4e; 
+  color: white; 
+  padding: 20px; 
+} 
+
+.foto { 
+  width: 100px; 
+  border-radius: 50%; 
+  display: block; 
+  margin: 0 auto 10px; 
+} 
+
+.lado ul { 
+  list-style: none; 
+  padding: 0; 
+} 
+
+/* Parte principal */ 
+.main { 
+  padding: 20px; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px; 
+} 
+
+/* Responsive */ 
+@media (max-width: 700px) { 
+  .cv { 
+  grid-template-columns: 1fr; 
+  } 
+}
